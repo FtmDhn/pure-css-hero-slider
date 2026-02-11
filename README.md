@@ -1,4 +1,4 @@
-# 🎬 Cinematic Hero Slider
+#  Cinematic Hero Slider
 
 A modern full-screen animated hero slider built with pure HTML and CSS.
 
@@ -6,7 +6,7 @@ This project demonstrates advanced layout techniques, layering, typography styli
 
 <br>
 
-### 🚀 Features
+###  Features
 
  Fullscreen hero section (100vh layout)
  Smooth animation effects
@@ -17,7 +17,7 @@ This project demonstrates advanced layout techniques, layering, typography styli
 
 <br>
 
-### 🛠 Technologies Used
+###  Technologies Used
 
  HTML5  
  CSS3  
@@ -34,29 +34,30 @@ Mobile responsiveness improvements are planned for future updates.
 
 <br>
 
-### 🎯 Purpose of This Project
+###  Purpose of This Project
 
-This project was built to practice:
- Advanced CSS layout techniques
- Animation design
- Visual hierarchy
- Hero section design patterns
+This project was built to practice  
+Advanced CSS layout techniques  
+Animation design  
+Visual hierarchy  
+Hero section design patterns
 
-
+<br>
 
 ### 📸 Preview
 
-(Add a screenshot here if you want)
+<img width="1920" height="817" alt="slider" src="https://github.com/user-attachments/assets/d67af826-b3f9-4a17-b7b2-76a49edd815d" />
 
 
+<br>
 
 ### 🔗 Live Demo
 
 https://your-username.github.io/repository-name
 
+<br>
 
+## 👩‍💻 Developer
 
-## 👩‍💻 Author
-
-Your Name  
+Fatemeh Dehghani  
 GitHub: https://github.com/your-username
