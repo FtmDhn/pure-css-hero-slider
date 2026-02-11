@@ -58,7 +58,7 @@ Hero section design patterns
 
 ### 🔗 Live Demo
 
-https://your-username.github.io/repository-name
+https://ftmdhn.github.io/pure-css-hero-slider/
 
 <br>
 
