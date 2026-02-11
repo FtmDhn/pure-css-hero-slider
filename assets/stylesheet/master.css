@@ -1,0 +1,395 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        :root {
+            --dark: lighten(#242424, 20%);
+            --green: #42605E;
+            --red: lighten(#6A0A0D, 10%);
+            --blue: #2D7791;
+        }
+
+        main {
+            width: 100%;
+            /* min-width: 100vh;
+            height: auto; */
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.107);
+            }
+
+            >.sec {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                animation: 20s infinite linear;
+                >figure {
+                    width: 51vh;
+                    height: 67vh;
+                    position: absolute;
+                    top: 15%;
+                    right: 60%;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 6vh 0, 6vh 61vh, 44vh 61vh, 44vh 6vh, 6vh 6vh);
+                    transform: translate(200px ,0) rotate(-20deg); 
+                    opacity: 0;
+                    animation: fig1 5s linear infinite;
+                    transform-origin: 50% 0;
+                    &::after {
+                        content: '';
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #42605e7a;
+                    }
+
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transform: scale(1.8);
+                    }
+                }
+
+                >figcaption {
+                    position: absolute;
+                    top: 40%;
+                    left: 37%;
+                    z-index: 2;
+                    height: 0;
+                    animation: txt 20s linear infinite;
+                    overflow: hidden;
+                    >span {
+                        color: white;
+                        font-size: 110px;
+                        display: block;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                    }
+
+                }
+            }
+
+            >.sec1 {
+                background-image: url(../img/blackwidow.jpg);
+                animation-name: pic1;
+            }
+
+            >.sec2 {
+                background-image: url(../img/captainamerica.jpg);
+                animation-name: pic2;
+
+                >figure {
+                    &::after {
+                        content: '';
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #0e0d0d3f;
+                    }
+                }
+            }
+
+            >.sec3 {
+                background-image: url(../img/ironman-alt.jpg);
+                animation-name: pic3;
+                >figure {
+                    &::after {
+                        content: '';
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #6a0a0d6c;
+                    }
+                }
+            }
+
+            >.sec4 {
+                background-image: url(../img/thor.jpg);
+                animation-name: pic4;
+                >figure {
+                    &::after {
+                        content: '';
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #1a44536d;
+                    }
+                }
+            }
+
+
+            >.fixed {
+                width: 400px;
+                height: 60px;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                background-color: var(--green);
+                display: flex;
+                >span{
+                    display: flex;
+                    width: 0;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    animation: 20s linear infinite;
+                    &:nth-of-type(1){
+                        animation-name: bgcolor1;
+                    }
+                    &:nth-of-type(2){
+                        animation-name: bgcolor2;
+                    }
+                    &:nth-of-type(3){
+                        animation-name: bgcolor3;
+                    }
+                    &:nth-of-type(4){
+                        animation-name: bgcolor4;
+                    }
+                }
+
+
+
+                >div {
+                    flex-grow: 1;
+                    flex-basis: 100px;
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    &::before {
+                        content: '';
+                        display: flex;
+                        width: 100%;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        animation: 20s linear infinite;
+                        background-color: white;
+                    }
+
+                    &:nth-of-type(1) {
+                        animation: color1 20s linear infinite;
+
+                        &::before {
+                            transform: translateX(-100px);
+                            animation-name: fixed1;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        animation: color2 20s linear infinite;
+
+                        &::before {
+                            transform: translateX(-100px);
+                            animation-name: fixed2;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        animation: color3 20s linear infinite;
+
+                        &::before {
+                            transform: translateX(-100px);
+                            animation-name: fixed3;
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        animation: color4 20s linear infinite;
+
+                        &::before {
+                            transform: translateX(-100px);
+                            animation-name: fixed4;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        @keyframes color1 {
+            0% {background-color: transparent;}
+            1% {background-color: #1f2833;}
+            25% { background-color: #1f2833; }
+            25.0001% { background-color: transparent;}
+            100% {background-color: transparent;}
+        }
+
+        @keyframes color2 {
+            0% {background-color: transparent;}
+            25% {background-color: transparent;}
+            26% {background-color: #1f2833}
+            50% {background-color: #1f2833}
+            50.0001% {background-color: transparent;}
+            100% {background-color: transparent;}
+        }
+
+        @keyframes color3 {
+            0% {background-color: transparent;}
+            50% {background-color: transparent;}
+            51% {background-color: #1f2833}
+            75% {background-color: #1f2833}
+            75.0001% {background-color: transparent;}
+            100% {background-color: transparent;}
+        }
+
+        @keyframes color4 {
+            0% {background-color: transparent;}
+            75% {background-color: transparent;}
+            76% {background-color: #1f2833}
+            98% {background-color: #1f2833}
+            98.0001% {background-color: transparent;}
+            100% {background-color: transparent;}
+        }
+
+
+
+        @keyframes fixed1 {
+            0% {transform: translateX(-100px);}
+            25% {transform: translateX(0);}
+            27% {transform: translateX(100px);}
+            100% {transform: translateX(100px);}
+        }
+
+        @keyframes fixed2 {
+            0% {transform: translateX(-100px);}
+            25% {transform: translateX(-100px);}
+            50% {transform: translateX(0);}
+            52% {transform: translateX(100px);}
+            100% {transform: translateX(100px);}
+        }
+
+        @keyframes fixed3 {
+            0% {transform: translateX(-100px);}
+            50% {transform: translateX(-100px);}
+            75% {transform: translateX(0);}
+            77% {transform: translateX(100px);}
+            100% {transform: translateX(100px);}
+        }
+
+        @keyframes fixed4 {
+            0% {transform: translateX(-100px);}
+            75% {transform: translateX(-100px);}
+            98% {transform: translateX(0);}
+            100% {transform: translateX(100px);}
+        }
+
+
+        @keyframes pic1 {
+            0%{right: 0;}
+            25%{right: 0;}
+            28%{right: 100%;}
+            28.0001%{right: -100%;}
+            95%{right: -100%;}
+            100%{right: 0;}
+        }
+        @keyframes pic2{
+            0%{right: -100%;}
+            25%{right: -100%;}
+            28%{right: 0;}
+            50%{right: 0;}
+            53%{right: 100%;}
+            53.0001%{right: -100%;}
+            100%{right: -100%;}
+        }
+        @keyframes pic3{
+            0%{right: -100%;}
+            50%{right: -100%;}
+            53%{right: 0;}
+            75%{right: 0;}
+            78%{right: 100%;}
+            78.0001%{right: -100%;}
+            100%{right: -100%;}
+        }
+        @keyframes pic4{
+            0%{right: -100%;}
+            75%{right: -100%;}
+            78%{right: 0;}
+            95%{right: 0;}
+            100%{right: 100%;}
+        }
+
+        @keyframes bgcolor1{
+            0%{width: 0;}
+            0.00000000001%{width: 100%; background-color: var(--green);}
+            100%{width: 100%; background-color: var(--green);}
+        }
+        @keyframes bgcolor2{
+            0%{width: 0;}
+            25%{width: 0;}
+            28%{width: 100%; background-color: #575755;}
+            100%{width: 100%; background-color: #575755;}
+        }
+        @keyframes bgcolor3{
+            0%{width: 0;}
+            50%{width: 0;}
+            53%{width: 100%; background-color: #6A0A0D;}
+            100%{width: 100%; background-color: #6A0A0D;}
+        }
+        @keyframes bgcolor4{
+            0%{width: 0;}
+            75%{width: 0;}
+            78%{width: 100%; background-color: var(--blue);}
+            100%{width: 100%; background-color: var(--blue);}
+        }
+
+        @keyframes fig1{
+            0%{transform: translate(200px ,0) rotate(-20deg); opacity: 0;}
+            20%{transform: rotate(0); opacity: 1;}
+            60%{transform: rotate(0); opacity: 1;}
+            85%{transform: translate(-200px ,0) rotate(10deg); opacity: 0;}
+            100%{transform: translate(-200px ,0) rotate(10deg); opacity: 0;}
+        }
+        @keyframes txt{
+            0%{height: 0;}
+            10%{height: 100%;}
+            22%{height: 100%;}
+            26%{height: 0;}
+            28%{height: 0;}
+            38%{height: 100%;}
+            47%{height: 100%;}
+            51%{height: 0;}
+            53%{height: 0;}
+            63%{height: 100%;}
+            72%{height: 100%;}
+            76%{height: 0;}
+            88%{height: 100%;}
+            92%{height: 100%;}
+            96%{height: 0;}
+            100%{height: 0;}
+        }
