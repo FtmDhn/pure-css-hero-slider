@@ -70,4 +70,5 @@ https://ftmdhn.github.io/pure-css-hero-slider/
 
 <br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://ir.linkedin.com/in/fatemeh-dehghani-060973314?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F)  [![Instagram](https://img.shields.io/badge/Instagram-Follow-red)](https://www.instagram.com/YOUR_INSTAGRAM)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/fatemeh-dehghani-060973314/
+)  [![Instagram](https://img.shields.io/badge/Instagram-Follow-red)](https://www.instagram.com/ftm.dehgni/)
